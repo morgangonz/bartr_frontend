@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add an Item</title>
+<!-- Bootstrap Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Bootstrap Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Bootstrap Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!--link to custom css-->
+<link rel ="stylesheet" href ="addItem.css">
+
+<!--link to header/footer css-->
+<link rel ="stylesheet" href="../css/headerfooter.css">
+
+<!--materalize font for footer-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!--google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Pacifico" rel="stylesheet">
+
+</head>
+<body> 
+<!--top nav bar to stay static-->
+    <nav class="nav-wrapper" id="nav-mobile" class="right hide-on-med-and-down">
+      <a href="#" class="brand-logo">Bartr.</a>
+    </nav>
+
+
+<!--form begins here-->   
+ <form  name = "newUser" action = "/signup" method = "POST">
+  <input class="form-control" type="text" placeholder="Item name">
+  <input class="form-control form-control-lg" type="text" placeholder="Description">
+  
+
+<!-- choose category via dropdown menu-->
+
+<div class="form-inline">
+  <label class="mr-sm-2" for="inlineFormCustomSelect">Choose</label>
+  <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+    <option selected>Category</option>
+    <option value="1">Home/furniture</option>
+    <option value="2">Kitchen</option>
+    <option value="3">Auto</option>
+    <option value="4">Fashion/apparel</option>
+    <option value="5">Technology</option>
+    <option value="6">Miscellanous</option>
+  </select>
+ 
+</div>  
+
+</form>
+
+<!--buttons to add item, take and upload photo-->
+<div id="btns"> 
+      <div id="camera">
+       <img id="cameraPic" src="" style="width:auto;height:120px;"> 
+        <button class="camera-control" onclick="capturePhoto();">Take Photo</button>
+        <!--upolad photo from camera roll -->
+            <button id ="upload">Upload from Gallery</button>
+            <button id="add-item">+ item </button>        
+      </div>   
+</div>
+ 
+
+<!--///////////////////footer//////////////////-->
+
+<footer> 
+  <a href="/index.html"><i class="small material-icons" id ="click">swap_calls</i></a>
+  <a href="/search.html"><i class="small material-icons" id ="click">search</i></a>
+  <a href="/addItem.html"><i class="small material-icons" id ="click">playlist_add</i></a>
+  <a href="/userprofile.html"><i class="small material-icons" id ="click">perm_identity</i></a>
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src ="addItem.js"></script>
+   <script type="text/javascript" src ="./js/server.js"></script>
+ 
+</body>
+</html>

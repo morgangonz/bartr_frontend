@@ -1,0 +1,55 @@
+/* stars for rating */
+#filled {
+	color:yellow;
+}
+#notfilled {
+	color:grey;
+}
+/* img grid */
+
+img { 
+	width:200px; 
+	margin:10px; 
+	float:left; 
+	text-align:left;
+}
+{ box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #DDD;
+  width:100%;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 30%;
+  
+}
+
+.grid-item {
+  float: left;
+  margin-top: 10px;
+  text-align: left;
+  width: 200px; 
+  margin-right:10px;
+  margin-left:10px; 
+}
+
+
+

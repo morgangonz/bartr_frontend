@@ -1,0 +1,36 @@
+button {			
+background-color: #d9d9d9;
+border-radius: 5px;
+color:#4484ce;
+font-size:20px;
+width:100%;
+font-family: 'Montserrat', sans-serif;
+margin-right:10px;
+margin-left:10px;
+}
+
+#camera {
+text-align:center;
+}
+
+body {
+background-color: #f9cf00;
+z-index: -1;
+
+}
+
+#add-item {
+	background-color:#4484ce;
+	color:white;
+	width:100px;
+	text-align:center;
+}
+
+form {
+	margin-right:10px;
+	margin-left:10px;
+}
+
+.browser-default {
+	margin-bottom:150px;
+}
