@@ -1,9 +1,10 @@
 button {			
-background-color: #d9d9d9;
+background-color: white;
 border-radius: 5px;
-color:#4484ce;
+color:#4db6ac;
+opacity:0.8;
 font-size:20px;
-width:100%;
+width:95%;
 font-family: 'Montserrat', sans-serif;
 margin-right:10px;
 margin-left:10px;
@@ -14,23 +15,26 @@ text-align:center;
 }
 
 body {
-background-color: #f9cf00;
+background-color: #d9d9d9;
 z-index: -1;
 
 }
 
 #add-item {
-	background-color:#4484ce;
+	background-color:#4db6ac;
 	color:white;
 	width:100px;
 	text-align:center;
+	margin-bottom:5px;
 }
 
-form {
+form, label {
 	margin-right:10px;
 	margin-left:10px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .browser-default {
 	margin-bottom:150px;
 }
+

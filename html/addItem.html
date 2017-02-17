@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Add an Item</title>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<title>Add an Item</title>  
+
 <!-- Bootstrap Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
 <!-- Bootstrap Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
 <!-- Bootstrap Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<!--link to custom css-->
-<link rel ="stylesheet" href ="addItem.css">
+
+<!-- Materalize Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+<!-- Materalize Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+<!--materalize font for footer-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Pacifico" rel="stylesheet">
 
 <!--link to header/footer css-->
 <link rel ="stylesheet" href="../css/headerfooter.css">
+<!--link to custom css-->
+<link rel ="stylesheet" href ="../css/addItem.css">
 
-<!--materalize font for footer-->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-<!--google fonts-->
-<link href="https://fonts.googleapis.com/css?family=Montserrat|Pacifico" rel="stylesheet">
 
 </head>
 <body> 
@@ -39,10 +44,9 @@
 
 <!-- choose category via dropdown menu-->
 
-<div class="form-inline">
-  <label class="mr-sm-2" for="inlineFormCustomSelect">Choose</label>
-  <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
-    <option selected>Category</option>
+  <label>Item category</label>
+  <select class="browser-default">
+    <option value="" disabled selected>Choose one</option>
     <option value="1">Home/furniture</option>
     <option value="2">Kitchen</option>
     <option value="3">Auto</option>
