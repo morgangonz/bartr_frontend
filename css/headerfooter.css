@@ -1,6 +1,7 @@
 .nav-wrapper {
 	background-color: #ffcc66;
 	font-family: 'Montserrat', sans-serif;
+	position: fixed;
 }
 
 /*footer styling */
@@ -23,14 +24,17 @@ body {
 
 nav {
   background-color: #FFCC66;
+  position: fixed;
 }
 
 nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
   display: inline-block;
+  position: fixed;
 }
 
 nav a {
   color: white;
+  position: fixed;
 }
 
 
