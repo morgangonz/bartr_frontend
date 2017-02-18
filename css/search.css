@@ -6,12 +6,27 @@ html { overflow-y: scroll; }
 body { font-family: sans-serif; }
 
 i {
-  color: #4Db6ac;
+  color: teal;
+}
+
+button #arrow{
+  border-style: none;
+  align: right;
+  width:0;
+  height:0;
+  background-color: white;
+  opacity: 0%;
+  padding: 50%;
 }
 
 i #arrow {
   color: #008B8B ;
   background-color: none;
+  background: none;
+  float: right;
+  border-style: none;
+
+
 }
 
 /* ---- grid ---- */
