@@ -4,3 +4,15 @@
 html { overflow-y: scroll; }
 
 body { font-family: sans-serif; }
+
+.col {
+	width: 50%;
+
+}
+
+.card {
+	height: 50%;
+	width: 50%;
+}
+.container {
+	}
